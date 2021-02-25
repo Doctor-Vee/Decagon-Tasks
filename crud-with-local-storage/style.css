@@ -1,0 +1,59 @@
+input, button, textarea {
+  padding: 7px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+button.edit{
+  border: 1px solid blue;
+}
+
+button.delete{
+  border: 1px solid red;
+}
+
+
+input, textarea {
+width: 90%;
+}
+
+fieldset {
+  margin: 20px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+ul#blogDisplay{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+ul#blogDisplay li {
+  background: #eee;
+  padding: 20px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+#editModal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.modal-contents {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
